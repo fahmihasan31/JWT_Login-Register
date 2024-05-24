@@ -1,0 +1,28 @@
+GET http://localhost:8000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1lIjoiYXdhbiIsImVtYWlsIjoiYXdhbjFAZ21haWwuY29tIiwiaWF0IjoxNzE2NTM4ODk4LCJleHAiOjE3MTY1Mzg5MjN9.UJrIJKd4qL14uB8H7zBM3OMrV7s9aZ5ghH0D5b-QEvw
+###
+POST  http://localhost:8000/users
+Content-Type: application/json
+
+{
+  "name": "awan",
+  "email": "awan1@gmail.com",
+  "password": "123456",
+  "confirmPassword": "123456"
+}
+
+###
+POST  http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "email": "awan1@gmail.com",
+  "password": "123456"
+}
+
+###
+GET http://localhost:8000/token
+
+###
+DELETE http://localhost:8000/logout
+
